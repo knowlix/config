@@ -1,4 +1,3 @@
-config
+TotalCommander Config
 ======
-
-Own configurations for different programs
+Folder: C:\Users\Evgenij_Kozhevnikov\AppData\Roaming\GHISLER
