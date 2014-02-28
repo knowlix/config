@@ -1,4 +1,3 @@
-config
+Emacs Config
 ======
-
-Own configurations for different programs
+Folder: ~
