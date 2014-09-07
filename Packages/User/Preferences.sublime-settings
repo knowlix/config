@@ -1,0 +1,8 @@
+// Settings in here override those in "Default/Preferences.sublime-settings",
+// and are overridden in turn by file type specific settings.
+{
+	"translate_tabs_to_spaces": true,
+	"show_encoding": true,
+	"show_line_endings": true,
+	"highlight_line": true
+}

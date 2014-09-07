@@ -1,4 +1,4 @@
-config
+Sublime Text 3
 ======
 
-Own configurations for different programs
+Root path is 'AppData\Roaming\Sublime Text 3'
