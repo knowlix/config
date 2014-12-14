@@ -1,3 +1,6 @@
 Emacs Config
 ======
-Folder: ~\AppData\Roaming
+Folder:
+
+Windows: ~\AppData\Roaming
+Linux: ~
