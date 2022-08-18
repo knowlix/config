@@ -1,4 +1,7 @@
-config
-======
+# Local Development Environment on top of Fish Shell and Neovim
 
-Own configurations for different programs
+## Toolset:
+ - Oh My Fish
+ - Fzf
+ - lazygit
+ - peco
