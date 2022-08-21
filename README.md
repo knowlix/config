@@ -11,6 +11,10 @@
   > git pager with visual representation of diffs
  - lazygit
   > terminal visual git client
+
+### Python-specific tools
+ - pipx
+  > For python app installation into isolated environments. Useful for LSP servers installation.
  - pyright
   > Static type checker for Python with LSP.
  - pyenv
