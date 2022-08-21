@@ -1,0 +1,16 @@
+os:
+  editCommand: 'nvim'
+  editCommandTemplate: '{{editor}} +{{line}} -- {{filename}}'
+
+gui:
+  theme:
+    selectedLineBgColor:
+      - underline
+    selectedRangeBgColor:
+      - underline
+
+git:
+  paging:
+    colorArg: never
+    useConfig: false
+    pager: delta --dark --paging=never

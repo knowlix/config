@@ -1,7 +1,12 @@
 # Local Development Environment on top of Fish Shell and Neovim
 
 ## Toolset:
- - Oh My Fish
- - Fzf
+ - fish shell and oh my fish framework
+ - fzf
+ - git-delta
  - lazygit
- - peco
+ - pyright
+ - pyenv
+
+## How I configure my environment
+ - ln -sf source target
