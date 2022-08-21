@@ -31,7 +31,6 @@ filetype plugin indent on
 call plug#begin()
 " LPS-based coding plugins
 Plug 'neovim/nvim-lspconfig'
-Plug 'dense-analysis/ale'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Color schemas
@@ -74,6 +73,12 @@ nmap <C-k> :lua require('smart-splits').move_cursor_up()<CR>
 nmap <C-l> :lua require('smart-splits').move_cursor_right()<CR>
 
 " CoC Configuration
+
+let g:coc_global_extensions = [
+    \ 'coc-jedi',
+    \ 'coc-pyright'
+    \ ]
+
 " Use tab for trigger completion with characters ahead and navigate.
 " NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
 " other plugin before putting this into your config.
