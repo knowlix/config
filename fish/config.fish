@@ -1,9 +1,15 @@
 if status is-interactive
     # Commands to run in interactive sessions can go here
-    eval "$(/opt/homebrew/bin/brew shellenv)"
+    eval "$(brew shellenv)"
 
     # NodeJS binraies
-    fish_add_path /opt/homebrew/opt/node@16/bin
+    if test -d /usr/local/opt/node@16/bin
+        fish_add_path /usr/local/opt/node@16/bin
+    end
+
+    if test -d /opt/homebrew/opt/node@16/bin
+        fish_add_path /opt/homebrew/opt/node@16/bin
+    end
 
     # python path management by pyenv
     set -Ux PYENV_ROOT $HOME/.pyenv
