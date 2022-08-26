@@ -32,7 +32,7 @@
         curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
         omf install robbyrussell
 4. Install basic cli environment tools
-	brew install pyenv node@16 tmux lazygit git-delta fzf bat
+	brew install pyenv node@16 tmux lazygit git-delta fzf bat neovim
 5. Configure Fishshell and CLI tools
         git clone git@github.com:knowlix/config.git
         ln -sf ~/Projects/config/fish/config.fish ~/.config/fish/config.fish
@@ -40,7 +40,12 @@
         ln -sf ~/Projects/config/fish/functions/fish_right_prompt.fish ~/.config/fish/functions/fish_right_prompt.fish
         ln -sf ~/Projects/config/git/.gitconfig  ~/.gitconfig
         ln -sf ~/Projects/config/lazygit/config.yml ~/Library/Application\ Support/lazygit/config.yml
+        mkdir ~/.config/nvim && ln -sf ~/Projects/config/nvim/init.vim ~/.config/nvim/init.vim
 6. Nerd Font
         brew tap homebrew/cask-fonts
         brew install --cask font-fira-code-nerd-font
-6. Install and configure Neovim
+7. Configure Neovim
+        sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+        nvim ~/.config/nvim/init.vim
+        #:PlugInstall
