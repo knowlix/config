@@ -11,6 +11,8 @@
   > git pager with visual representation of diffs
  - lazygit
   > terminal visual git client
+ - sdkman
+  > SDK manager for java mostly
 
 ### Python-specific tools
  - pipx
@@ -49,3 +51,6 @@
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
         nvim ~/.config/nvim/init.vim
         #:PlugInstall
+8. Install sdkman
+        curl -s "https://get.sdkman.io" | bash
+        omf install sdk
