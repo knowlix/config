@@ -57,7 +57,7 @@ call plug#end()
 
 colorscheme gruvbox
 
-nnoremap <silent> <leader>gg :LazyGit<CR>
+nnoremap <silent>g :LazyGit<CR>
 
 nmap <C-t> :NERDTreeToggle<CR>
 nmap <A-t> :NERDTreeFocus<CR>
