@@ -54,6 +54,7 @@
         ln -sf ~/Projects/config/git/.gitconfig  ~/.gitconfig
         ln -sf ~/Projects/config/lazygit/config.yml ~/Library/Application\ Support/lazygit/config.yml
         mkdir ~/.config/nvim && ln -sf ~/Projects/config/nvim/init.vim ~/.config/nvim/init.vim
+        ln -sf ~/Projets/config/nvim/coc-settings.json ~/.config/nvim/coc-settings.json
 6. Nerd Font
         brew tap homebrew/cask-fonts
         brew install --cask font-fira-code-nerd-font
