@@ -74,7 +74,15 @@ nmap <C-l> :lua require('smart-splits').move_cursor_right()<CR>
 
 let g:coc_global_extensions = [
     \ 'coc-jedi',
-    \ 'coc-pyright'
+    \ 'coc-pyright',
+    \ 'coc-java',
+    \ 'coc-css',
+    \ 'coc-html',
+    \ 'coc-tsserver',
+    \ 'coc-angular', 
+    \ 'coc-markdownlint', 
+    \ 'coc-docker',
+    \ 'coc-json'
     \ ]
 
 " Use tab for trigger completion with characters ahead and navigate.
