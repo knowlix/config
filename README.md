@@ -46,6 +46,7 @@
         omf install robbyrussell
 4. Install basic cli environment tools
         brew install pyenv node@16 tmux lazygit git-delta fzf bat neovim
+        /usr/local/opt/fzf/install || /opt/homebrew/opt/fzf/install
 5. Configure Fishshell and CLI tools
         git clone git@github.com:knowlix/config.git
         ln -sf ~/Projects/config/fish/config.fish ~/.config/fish/config.fish
