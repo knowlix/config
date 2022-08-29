@@ -1,6 +1,11 @@
 if status is-interactive
     # Commands to run in interactive sessions can go here
-    eval "$(brew shellenv)"
+
+    if test -e /opt/homebrew/bin/brew
+        eval "$(/opt/homebrew/bin/brew shellenv)"
+    else
+        eval "$(brew shellenv)"
+    end
 
     # NodeJS binraies
     if test -d /usr/local/opt/node@16/bin
