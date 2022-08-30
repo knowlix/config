@@ -1,6 +1,7 @@
 set number
 set noswapfile
 set cursorline
+set termguicolors
 
 set autoread
 set autowrite
