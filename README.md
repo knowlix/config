@@ -14,6 +14,8 @@
   terminal visual git client
 - sdkman
   SDK manager for java mostly
+- ripgrep
+  cli search. used by CocSearch.
 
 ### Python-specific tools
 
@@ -45,7 +47,7 @@
         curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
         omf install robbyrussell
 4. Install basic cli environment tools
-        brew install pyenv node@16 tmux lazygit git-delta fzf bat neovim
+        brew install pyenv node@16 tmux lazygit git-delta fzf bat neovim ripgrep
         /usr/local/opt/fzf/install || /opt/homebrew/opt/fzf/install
 5. Configure Fishshell and CLI tools
         git clone git@github.com:knowlix/config.git
