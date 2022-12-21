@@ -30,7 +30,8 @@
 
 ### OS specific configuration
 
-1. Install MacOS dev tools (just run dev command like git to initiate the process)
+1. Install MacOS dev tools
+        xcode-select --install
 2. Use Option as Meta key in Terminal Keyboard configuration
 3. Disable C-space and C-A-space hotkeys for input source switching.
    There is a separate button on a keyboard, but this hotkey is used by autocompletion.
