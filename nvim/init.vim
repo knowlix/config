@@ -49,6 +49,7 @@ Plug 'tpope/vim-commentary'
 Plug 'kdheepak/lazygit.nvim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'junegunn/vim-easy-align'
 
 " NERDTree
 Plug 'preservim/nerdtree'
@@ -57,6 +58,11 @@ Plug 'ryanoasis/vim-devicons'
 call plug#end()
 
 colorscheme gruvbox
+
+" Start interactive EasyAlign in visual mode (e.g. vipga)
+xmap ga <Plug>(EasyAlign)
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+nmap ga <Plug>(EasyAlign)
 
 nmap <C-t> :NERDTreeToggle<CR>
 nmap <A-t> :NERDTreeFocus<CR>
