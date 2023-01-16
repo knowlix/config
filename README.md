@@ -48,9 +48,13 @@
         curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
         omf install robbyrussell
 4. Install basic cli environment tools
-        brew install pyenv node@16 tmux lazygit git-delta fzf bat neovim ripgrep
+        brew install pyenv node@16 tmux lazygit git-delta fzf bat neovim ripgrep bash
         /usr/local/opt/fzf/install || /opt/homebrew/opt/fzf/install
-5. Configure Fishshell and CLI tools
+5. Configure TMUX
+        mkdir -p ~/.config/tmux && git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/tpm && chmod +x ~/.config/tmux/tpm/tpm
+        ln -sf ~/Projects/config/tmux/tmux.conf ~/.config/tmux/tmux.conf
+        Reload shell and press ctrl-b I to install TPM plugins
+6. Configure Fishshell and CLI tools
         git clone git@github.com:knowlix/config.git
         ln -sf ~/Projects/config/fish/config.fish ~/.config/fish/config.fish
         ln -sf ~/Projects/config/fish/functions/fish_greeting.fish ~/.config/fish/functions/fish_greeting.fish
@@ -61,14 +65,14 @@
         mkdir ~/.config/nvim && ln -sf ~/Projects/config/nvim/init.vim ~/.config/nvim/init.vim
         ln -sf ~/Projets/config/nvim/coc-settings.json ~/.config/nvim/coc-settings.json
         mkdir /usr/local/share/lombok && cd /usr/local/share/lombok/ && curl "https://projectlombok.org/downloads/lombok.jar" --output lombok.jar
-6. Nerd Font
+7. Nerd Font
         brew tap homebrew/cask-fonts
         brew install --cask font-fira-code-nerd-font
         select font in terminal
-7. Configure Neovim
+8. Configure Neovim
         sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
         nvim ~/.config/nvim/init.vim
         #:PlugInstall
-8. Install sdkman
+9. Install sdkman
         curl -s "https://get.sdkman.io" | bash
         omf install sdk
