@@ -33,6 +33,7 @@ call plug#begin()
 " LPS-based coding plugins
 Plug 'neovim/nvim-lspconfig'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'antoinemadec/coc-fzf', {'branch': 'release'}
 
 " Color schemas
 Plug 'morhetz/gruvbox'

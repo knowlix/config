@@ -25,6 +25,8 @@
   Static type checker for Python with LSP.
 - pyenv
   Python version manager.
+- pynvim
+  Python library for Vim and its plugins
 
 ## How I configure my environment
 
