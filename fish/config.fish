@@ -8,12 +8,12 @@ if status is-interactive
     end
 
     # NodeJS binraies
-    if test -d /usr/local/opt/node@16/bin
-        fish_add_path /usr/local/opt/node@16/bin
+    if test -d /usr/local/opt/node@18/bin
+        fish_add_path /usr/local/opt/node@18/bin
     end
 
-    if test -d /opt/homebrew/opt/node@16/bin
-        fish_add_path /opt/homebrew/opt/node@16/bin
+    if test -d /opt/homebrew/opt/node@18/bin
+        fish_add_path /opt/homebrew/opt/node@18/bin
     end
 
     # python path management by pyenv
