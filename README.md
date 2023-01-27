@@ -50,7 +50,7 @@
         curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
         omf install robbyrussell
 4. Install basic cli environment tools
-        brew install pyenv node@16 tmux lazygit git-delta fzf bat neovim ripgrep bash
+        brew install pyenv node@18 tmux lazygit git-delta fzf bat neovim ripgrep bash
         /usr/local/opt/fzf/install || /opt/homebrew/opt/fzf/install
 5. Configure TMUX
         mkdir -p ~/.config/tmux && git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/tpm && chmod +x ~/.config/tmux/tpm/tpm
