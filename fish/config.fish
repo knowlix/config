@@ -21,6 +21,9 @@ if status is-interactive
     set -U fish_user_paths $PYENV_ROOT/bin $fish_user_paths
     pyenv init - | source
 
+    # batcat to colorize man pages
+    set -x MANPAGER "sh -c 'col -bx | bat -l man -p'"
+
     # starts TMUX carefully
     if not set -q TMUX
     	exec tmux
