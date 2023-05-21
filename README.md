@@ -40,6 +40,8 @@
 
 ### Software
 
+0. Clone config repo
+        git clone git@github.com:knowlix/config.git ~/Projects/config
 1. Install Homebrew
         /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 2. Install Fish Shell
@@ -52,12 +54,12 @@
 4. Install basic cli environment tools
         brew install pyenv node@18 tmux lazygit git-delta fzf bat neovim ripgrep bash
         /usr/local/opt/fzf/install || /opt/homebrew/opt/fzf/install
+        launch lazygit in order to initialize all app paths
 5. Configure TMUX
         mkdir -p ~/.config/tmux && git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/tpm && chmod +x ~/.config/tmux/tpm/tpm
         ln -sf ~/Projects/config/tmux/tmux.conf ~/.config/tmux/tmux.conf
         Reload shell and press ctrl-b I to install TPM plugins
 6. Configure Fishshell and CLI tools
-        git clone git@github.com:knowlix/config.git
         ln -sf ~/Projects/config/fish/config.fish ~/.config/fish/config.fish
         ln -sf ~/Projects/config/fish/functions/fish_greeting.fish ~/.config/fish/functions/fish_greeting.fish
         ln -sf ~/Projects/config/fish/functions/fish_right_prompt.fish ~/.config/fish/functions/fish_right_prompt.fish
