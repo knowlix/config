@@ -274,4 +274,4 @@ nnoremap <silent> <Space>bw <Cmd>BufferOrderByWindowNumber<CR>
 " :BarbarDisable - very bad command, should never be used
 
 " custom scripts
-:luafile scripts/toggleterm.lua
+:luafile ~/.config/nvim/scripts/toggleterm.lua
