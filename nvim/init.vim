@@ -51,6 +51,7 @@ Plug 'kdheepak/lazygit.nvim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/vim-easy-align'
+Plug 'akinsho/toggleterm.nvim', {'tag' : '*'}
 
 " NERDTree
 Plug 'preservim/nerdtree'
@@ -59,6 +60,9 @@ Plug 'ryanoasis/vim-devicons'
 call plug#end()
 
 colorscheme gruvbox
+
+lua require("toggleterm").setup()
+nmap § <Cmd>exe v:count1 . "ToggleTerm"<CR>
 
 " Start interactive EasyAlign in visual mode (e.g. vipga)
 xmap ga <Plug>(EasyAlign)
