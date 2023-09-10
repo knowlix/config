@@ -25,8 +25,15 @@
   Static type checker for Python with LSP.
 - pyenv
   Python version manager.
+- [pipenv](https://pipenv.pypa.io)
+  Python virtual env and pip config manager.
 - pynvim
   Python library for Vim and its plugins
+
+## Useful hotkeys
+
+### Neovim
+- `gx`: open a URL in default browser
 
 ## How I configure my environment
 
@@ -52,7 +59,7 @@
         curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
         omf install robbyrussell
 4. Install basic cli environment tools
-        brew install pyenv node@18 tmux lazygit git-delta fzf bat neovim ripgrep bash
+        brew install pyenv pipenv node@18 tmux lazygit git-delta fzf bat neovim ripgrep bash
         /usr/local/opt/fzf/install || /opt/homebrew/opt/fzf/install
         launch lazygit in order to initialize all app paths
 5. Configure TMUX
