@@ -61,9 +61,6 @@ call plug#end()
 
 colorscheme gruvbox
 
-lua require("toggleterm").setup()
-nmap § <Cmd>exe v:count1 . "ToggleTerm"<CR>
-
 " Start interactive EasyAlign in visual mode (e.g. vipga)
 xmap ga <Plug>(EasyAlign)
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
@@ -276,3 +273,5 @@ nnoremap <silent> <Space>bw <Cmd>BufferOrderByWindowNumber<CR>
 " :BarbarEnable - enables barbar (enabled by default)
 " :BarbarDisable - very bad command, should never be used
 
+" custom scripts
+:luafile scripts/toggleterm.lua
