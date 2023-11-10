@@ -1,5 +1,7 @@
 {
   "diagnostic.virtualText":                true,
   "diagnostic.virtualTextCurrentLineOnly": false,
-  "java.jdt.ls.vmargs":                    "-javaagent:/usr/local/share/lombok/lombok.jar -Xbootclasspath/a:/usr/local/share/lombok/lombok.jar"
+  "java.jdt.ls.vmargs":                    "-javaagent:/usr/local/share/lombok/lombok.jar -Xbootclasspath/a:/usr/local/share/lombok/lombok.jar",
+  "python.formatting.provider":            "black",
+  "python.formatting.blackPath":           "/usr/local/bin/black"
 }
