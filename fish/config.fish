@@ -24,6 +24,9 @@ if status is-interactive
     # batcat to colorize man pages
     set -x MANPAGER "sh -c 'col -bx | bat -l man -p'"
 
+    # abbreviations
+    abbr -a docker podman
+
     # starts TMUX carefully
     if not set -q TMUX
     	exec tmux
