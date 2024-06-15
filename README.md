@@ -7,7 +7,8 @@
 - fzf
   Fuzzy finder for everything. Also shell history search.
 - bat
-  cat with syntax highlighting. Used by fzf.vim for previews.
+  cat with syntax highlighting. Used by fzf.vim for previews. 
+  Used to colorize man pages. Supports themes, see `man bat | lelss +'/--theme'`.
 - git-delta
   git pager with visual representation of diffs
 - lazygit

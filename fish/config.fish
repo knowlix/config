@@ -22,7 +22,7 @@ if status is-interactive
     pyenv init - | source
 
     # batcat to colorize man pages
-    set -x MANPAGER "sh -c 'col -bx | bat -l man -p'"
+    set -x MANPAGER "sh -c 'col -bx | bat -l man -p --theme \"Visual Studio Dark+\"'"
 
     # abbreviations
     abbr -a docker podman
