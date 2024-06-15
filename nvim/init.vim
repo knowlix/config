@@ -93,7 +93,8 @@ let g:coc_global_extensions = [
     \ 'coc-angular', 
     \ 'coc-markdownlint', 
     \ 'coc-docker',
-    \ 'coc-json'
+    \ 'coc-json',
+    \ 'coc-clangd'
     \ ]
 
 " Use tab for trigger completion with characters ahead and navigate.
