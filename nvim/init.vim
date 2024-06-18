@@ -38,6 +38,9 @@ Plug 'antoinemadec/coc-fzf', {'branch': 'release'}
 " Color schemas
 Plug 'morhetz/gruvbox'
 
+" Statusbar
+Plug 'vim-airline/vim-airline'
+
 " Syntax Highlighting
 Plug 'khaveesh/vim-fish-syntax'
 Plug 'hashivim/vim-terraform'
@@ -214,7 +217,7 @@ command! -nargs=0 OR   :call     CocActionAsync('runCommand', 'editor.action.org
 " Add (Neo)Vim's native statusline support.
 " NOTE: Please see `:h coc-status` for integrations with external plugins that
 " provide custom statusline: lightline.vim, vim-airline.
-set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
+set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}%=%l,%c
 
 " Mappings for CoCList
 " Show all diagnostics.

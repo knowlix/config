@@ -58,7 +58,7 @@
         chsh -s $(which fish)
 3. Install Oh My Fish
         curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
-        omf install robbyrussell
+        omf install robbyrussell # Customize schema in `~/.local/share/omf/themes/robbyrussell/functions/fish_prompt.fish`
 4. Install basic cli environment tools
         brew install pyenv pipenv node@18 tmux lazygit git-delta fzf bat neovim ripgrep bash
         /usr/local/opt/fzf/install || /opt/homebrew/opt/fzf/install
