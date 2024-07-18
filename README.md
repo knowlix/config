@@ -35,6 +35,7 @@
 
 ### Neovim
 - `gx`: open a URL in default browser
+- `gaip<symbol of equal identation>` (e.g. gaip= to align the equal symbol)
 
 ## How I configure my environment
 
