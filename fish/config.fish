@@ -8,18 +8,20 @@ if status is-interactive
     end
 
     # NodeJS binraies
-    if test -d /usr/local/opt/node@18/bin
-        fish_add_path /usr/local/opt/node@18/bin
+    if test -d /usr/local/opt/node/bin
+        fish_add_path /usr/local/opt/node/bin
     end
 
-    if test -d /opt/homebrew/opt/node@18/bin
-        fish_add_path /opt/homebrew/opt/node@18/bin
+    if test -d /opt/homebrew/opt/node/bin
+        fish_add_path /opt/homebrew/opt/node/bin
     end
 
     # python path management by pyenv
     set -Ux PYENV_ROOT $HOME/.pyenv
     set -U fish_user_paths $PYENV_ROOT/bin $fish_user_paths
     pyenv init - | source
+
+    source ~/.cargo/env.fish
 
     # batcat to colorize man pages
     set -x MANPAGER "sh -c 'col -bx | bat -l man -p --theme \"Visual Studio Dark+\"'"
