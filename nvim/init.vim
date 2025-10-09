@@ -57,14 +57,23 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'akinsho/toggleterm.nvim', {'tag' : '*'}
+Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+Plug 'folke/which-key.nvim'
 
 " NERDTree
 Plug 'preservim/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'ryanoasis/vim-devicons'
+
+" Copilot + AI
+Plug 'github/copilot.vim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'CopilotC-Nvim/CopilotChat.nvim'
 call plug#end()
 
 colorscheme gruvbox
+
+nnoremap <leader>u :!open <cWORD><CR>
 
 " Start interactive EasyAlign in visual mode (e.g. vipga)
 xmap ga <Plug>(EasyAlign)
@@ -97,7 +106,9 @@ let g:coc_global_extensions = [
     \ 'coc-markdownlint', 
     \ 'coc-docker',
     \ 'coc-json',
-    \ 'coc-clangd'
+    \ 'coc-clangd',
+    \ 'coc-rust-analyzer',
+    \ 'coc-go'
     \ ]
 
 " Use tab for trigger completion with characters ahead and navigate.
@@ -282,5 +293,16 @@ nnoremap <silent><nowait> <space>f <Cmd>Files<CR>
 " " :BarbarEnable - enables barbar (enabled by default)
 " " :BarbarDisable - very bad command, should never be used
 
+nmap <leader>zc :CopilotChat<CR>
+vmap <leader>zc :CopilotChat<CR>
+vmap <leader>ze :CopilotChatExplain<CR>
+vmap <leader>zr :CopilotChatReview<CR>
+vmap <leader>zf :CopilotChatFix<CR>
+vmap <leader>zo :CopilotChatOptimize<CR>
+vmap <leader>zt :CopilotChatTests<CR>
+vmap <leader>zd :CopilotChatDocs<CR>
+autocmd FileType copilot-chat inoremap <buffer> <Tab> <Plug>(copilot-accept)
+
 " custom scripts
 :luafile ~/.config/nvim/scripts/toggleterm.lua
+:luafile ~/.config/nvim/scripts/copilotchat.lua
